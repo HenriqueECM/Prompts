@@ -23,29 +23,6 @@ O texto funciona como um **resumo executivo do benefício esperado**, permitindo
 - qual melhoria será alcançada
 - qual impacto positivo o projeto trará para a organização
 
-## Contexto adicional da proposta
-
-O assistente também receberá **campos previamente preenchidos no formulário**, que devem ser utilizados para compreender melhor o contexto da proposta e manter consistência entre as seções.
-
-Campos disponíveis:
-
-{{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}
-
-Esses campos podem incluir informações como:
-
-- Situação Atual
-- Escopo do Projeto
-- Alternativas Avaliadas
-- Não Escopo
-- Outros campos já preenchidos
-
-Utilize essas informações para:
-
-- compreender o problema de negócio descrito
-- entender a solução proposta
-- garantir que o objetivo esteja alinhado ao contexto da proposta
-- evitar contradições entre campos
-
 ## Instructions
 
 ### Comportamento principal

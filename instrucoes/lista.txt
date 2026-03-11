@@ -1,0 +1,127 @@
+Para escrever o objetivo de um projeto no Compass de maneira adequada, você deve focar no benefício de negócio e não em requisitos técnicos ou funcionais.
+De acordo com as orientações dos especialistas nas fontes, as principais diretrizes são:
+Utilize o verbo "Propor": A recomendação é iniciar o texto sempre com a palavra "propor" (ou "apresentar"), uma vez que o documento será avaliado por um comitê para aprovação.
+Foque no Valor de Negócio: O erro mais comum é descrever uma tarefa técnica (como "incluir um campo" ou "desenvolver uma ferramenta") como se fosse o objetivo. O objetivo real deve explicar o que essa ação trará para a empresa, como ganhar agilidade, estar em compliance ou aumentar a assertividade nas vendas.
+Seja Conciso: O texto deve ser curto, preferencialmente com duas a três linhas no máximo.
+Resuma os Ganhos Qualitativos: O objetivo deve funcionar como um "resumão" dos resultados qualitativos esperados, conectando a implementação ao benefício final (ex: "propor a implantação de [solução] para melhorar o processo de [área]").
+Diferencie do Título: Enquanto o título é um resumo curtíssimo de cerca de 5 palavras para dar contexto, o objetivo trabalha um pouco mais a necessidade global que o projeto pretende alcançar.
+Exemplo prático mencionado nas fontes: Em vez de escrever "implantar ferramenta de CRM", o objetivo adequado seria: "Propor a implantação de [solução] possibilitando agilidade na geração de informações e estar em compliance com o processo corporativo".
+
+
+Para escrever a Situação Atual de forma adequada em uma proposta no Compass, você deve focar em detalhar o processo de negócio como ele ocorre hoje, enfatizando os problemas, as vulnerabilidades e as "dores" que justificam a necessidade do projeto.
+Com base nas orientações dos especialistas nas fontes, a maneira mais eficaz de preencher esse campo é seguindo estas diretrizes:
+Exploração Detalhada dos Problemas: Diferente do objetivo (que deve ser curto), a situação atual tende a ser um dos campos mais extensos, pois é onde se deve "explorar bastante" as dificuldades enfrentadas.
+Identificação de Vulnerabilidades e Gargalos: Devem ser relatados problemas como processos manuais, falhas de segurança, falta de integração entre sistemas ou a inexistência de uma ferramenta necessária. Por exemplo: "O processo atual é manual, gerando erros e demora na execução".
+Conexão Direta com o Escopo: A estrutura ideal da proposta é: Situação Atual (o problema) → Escopo (o remédio). Tudo o que for citado como um problema ou vulnerabilidade na situação atual deve ter um item correspondente no escopo que o resolva.
+Revisão de Conteúdo e Linguagem: Frequentemente, o conteúdo inicial deste campo é fornecido pelo próprio solicitante (muitas vezes via "copia e cola"), mas o analista deve revisar erros de concordância e escrita, além de garantir que a descrição reflita a realidade técnica e de negócio.
+Foco na Justificativa: O texto deve deixar claro para a comissão avaliadora por que o projeto é necessário agora, demonstrando o impacto negativo de manter o processo como ele está.
+Em resumo, a Situação Atual deve ser o diagnóstico completo da dor do cliente, servindo de base sólida para que a solução proposta no escopo seja considerada válida e necessária.
+
+
+Para escrever o escopo do projeto de maneira adequada no Compass, você deve focar em uma abordagem macro e executiva, evitando detalhes técnicos excessivos que não agreguem valor para a comissão avaliadora.
+Com base nos documentos, as melhores práticas para a redação do escopo são:
+O Escopo como "Remédio": O escopo deve ser estruturado para resolver diretamente os problemas listados no campo "Situação Atual". Por exemplo, se a situação atual descreve uma vulnerabilidade por processo manual, o escopo deve conter um item prevendo a automação desse processo.
+Nível de Detalhamento Executivo: A proposta deve ser escrita em alto nível, pois o público-alvo são gerentes e diretores que precisam entender o que está sendo entregue, e não como será implementado tecnicamente. Deve-se evitar mencionar nomes de tabelas específicas (ex: "tabela XYZ") ou operações técnicas detalhadas (como CRUDs), focando antes em funcionalidades de negócio (ex: "disponibilizar funcionalidade XPTO no Easy").
+Estrutura em Tópicos (Bullets): Recomenda-se listar as entregas em tópicos principais, que futuramente servirão de base para a criação de Stories no Jira. O analista deve evitar esmiuçar muitos sub-tópicos dentro da proposta, deixando o detalhamento minucioso para o documento de requisitos técnicos.
+Em resumo, o escopo ideal é aquele que apresenta uma solução clara e objetiva para as dores do negócio, estabelece limites rígidos para proteger o projeto e utiliza uma linguagem compreensível para gestores.
+
+
+Escrever o que não faz parte do escopo (também chamado de "não escopo") é considerado tão importante quanto definir o que será feito, pois essa seção funciona como um contrato com o usuário para evitar ambiguidades.
+A maneira mais adequada de redigir esse campo, segundo as fontes, deve seguir estas diretrizes:
+Estabeleça Limites Claros (Chaveamento): O objetivo principal é "chavear" o projeto, deixando explícito o que não será entregue para evitar que o solicitante peça funcionalidades extras (o famoso "mais um negocinho") durante a execução.
+Seja Específico sobre Exclusões Técnicas e de Processo: Deve-se listar itens que poderiam ser erroneamente compreendidos como parte do projeto. Exemplos citados incluem especificar que "não haverá saneamento de dados", que certas integrações não serão feitas ou que determinada automação não está inclusa.
+Delimite a Abrangência: Use este campo para reforçar restrições de localidade ou sistemas. Se o projeto é apenas para uma unidade específica (ex: "apenas para o México"), deve-se deixar claro que as demais unidades ou processos similares (como automação de outros setores) estão fora do atendimento atual.
+Evite o "Custo Adicional" Futuro: Registrar o que não será feito protege a equipe de TI, permitindo que, caso o usuário mude de ideia e queira algo fora do planejado, a liderança possa solicitar mais verba ou postergar o prazo por meio de uma nova negociação.
+Transparência para a Comissão: A clareza nesse campo ajuda os gerentes e diretores na comissão de aprovação a entenderem exatamente o que estão aprovando e quais são as fronteiras daquela proposta.
+Em resumo, o "não escopo" deve ser escrito de forma objetiva e assertiva, servindo como uma salvaguarda contra o crescimento descontrolado do projeto e garantindo que as expectativas do cliente estejam alinhadas com a entrega final.
+ 
+
+ A escrita das alternativas avaliadas deve focar na comparação objetiva entre diferentes caminhos para resolver o problema apresentado, sendo um campo especialmente relevante para propostas que envolvem um Business Case ou a escolha de novas soluções.
+Para preencher este campo de maneira adequada, você deve considerar os seguintes pontos:
+Contexto de Uso: Utilize este campo principalmente quando houver necessidade de estudar novas ferramentas (como um novo sistema de recrutamento) ou quando houver diferentes abordagens técnicas para uma melhoria.
+Comparação de Esforço: Detalhe o impacto em horas de cada opção. Por exemplo, você pode comparar uma solução rápida, como uma query (SQVI) de 8 horas, com o desenvolvimento de uma nova transação ABAP, que exigiria mais tempo.
+Análise de Prós e Contras: Para cada alternativa listada, é essencial descrever seus pontos positivos e negativos. Isso ajuda a comissão avaliadora a entender por que uma opção foi preterida em relação à outra.
+Fundamentação da Decisão: O objetivo deste campo é fornecer transparência sobre o estudo realizado, permitindo que os gerentes e diretores validem se a solução proposta no escopo é, de fato, a que oferece o melhor custo-benefício.
+ 
+
+ No campo de Principais Riscos e Plano de Mitigação do Compass, você deve descrever as possíveis falhas ou impactos negativos que podem ocorrer durante a execução do projeto ou no processo de negócio, acompanhados das ações planejadas para minimizar ou eliminar esses problemas.
+De acordo com as fontes, a maneira mais adequada de preencher esse campo envolve:
+Relacionar ao Contexto: Os riscos devem estar diretamente associados ao problema a ser resolvido, ao contexto do processo de negócio e ao escopo definido para o projeto.
+Identificar Riscos Reais: Exemplos de riscos incluem a paralisação de um serviço essencial (como um processo bancário), problemas de escopo ou atrasos no prazo de entrega devido a um mapeamento incompleto da implementação.
+Apresentar Soluções Práticas (Mitigação): Para cada risco, deve haver uma ação clara. Seguindo o exemplo de uma migração bancária, o plano de mitigação seria realizar o processo de forma faseada, iniciando apenas com uma funcionalidade (ex: extrato) antes de liberar as demais.
+A estrutura ideal é, portanto, ser específico e direto: identifique o que pode dar errado (Risco) e explique exatamente o que a equipe fará para evitar que isso aconteça (Plano de Mitigação).
+
+
+O campo de resultados esperados (qualitativos) deve descrever os benefícios não monetários que o projeto trará para a organização, focando na melhoria de processos e na experiência do usuário ou cliente.
+De acordo com as fontes, a maneira mais adequada de preenchê-lo envolve:
+Foco em Benefícios de Negócio: Diferente dos ganhos potenciais (que exigem cálculos), este campo deve focar em melhorias como agilidade, assertividade, satisfação do cliente e estabilidade de processos.
+Alinhamento com a Área de Negócio: As informações para este campo geralmente são fornecidas pelo próprio solicitante da área de negócio, pois é ele quem vivencia a "dor" do processo atual e sabe quais melhorias qualitativas são prioridade.
+Padronização para Automações: Quando o projeto visa transformar um processo manual em automático, é possível utilizar um padrão de redação que inclua ganhos como: melhoria na velocidade do processo, minimização de erros manuais e garantia de compliance.
+Distinção de Ganhos Financeiros: É essencial não confundir resultados qualitativos com ganhos potenciais ou reais. Enquanto o qualitativo é textual e descritivo, os ganhos financeiros exigem a descrição do cálculo e valores monetários (como redução de FTE ou economia de materiais).
+Em resumo, os resultados qualitativos devem pintar o cenário positivo de como a área funcionará após a implementação da solução, servindo como uma justificativa de valor que apoia a aprovação da proposta.
+
+
+Para escrever os Resultados Esperados (Ganhos Potenciais) de forma adequada no Compass, você deve focar em apresentar valores financeiros baseados em cálculos claros, e não apenas descrições textuais. Este campo é considerado essencial, pois propostas sem ganhos potenciais mensurados geralmente não são levadas para aprovação na comissão.
+A melhor maneira de preencher este campo, segundo as fontes, é seguindo estas diretrizes:
+1. Descreva o Cálculo (Memória de Cálculo)
+Não coloque apenas o valor final (ex: 200.000 USD). É obrigatório descrever como você chegou a esse número. Cada área tem custos diferentes, então o cálculo precisa ser transparente para que a comissão possa validá-lo.
+Exemplo de Redução de Horas: Se o projeto elimina uma tarefa manual, o cálculo deve ser: número de pessoas x horas gastas por mês x custo da hora do colaborador.
+2. O que colocar nos Ganhos Potenciais
+Os ganhos potenciais geralmente referem-se a custos evitados ou ganhos de produtividade. Exemplos comuns citados nas fontes incluem:
+Redução de FTE (Full-Time Equivalent): Diminuição da necessidade de colaboradores ou de horas extras para realizar uma tarefa.
+Custos Evitados (Multas): Se o projeto resolve uma obrigação legal, o ganho potencial é o valor da multa que a empresa deixaria de pagar (ex: multa de 100.000 mensais).
+Economia Direta: Redução de custos com impressão (papel/cartuchos), materiais de escritório ou gastos com viagens.
+Substituição de Ferramentas: Se o projeto permite cancelar a licença de um software pago (custo evitado), o valor da anuidade dessa ferramenta é um ganho potencial.
+3. Diferença entre Ganho Potencial e Real
+É importante não confundir os dois:
+Ganho Potencial: É o dinheiro que a empresa deixa de gastar ou o tempo que é otimizado (o dinheiro permanece no caixa).
+Ganho Real: É quando o projeto traz dinheiro novo para a empresa, como o aumento direto nas vendas. Se houver dúvida, a recomendação é transcrever a informação como ganho potencial.
+4. Uso da Inteligência Artificial
+A IA pode ajudar a organizar e estruturar o texto em tópicos para que a proposta siga um padrão visual e facilite a interpretação. No entanto, a IA não deve "inventar" os números do zero; ela precisa que o analista forneça a informação base (o estudo ou o rascunho do cálculo) para que ela possa refinar e simplificar a descrição.
+Em resumo, o campo de Ganhos Potenciais deve ser um demonstrativo financeiro justificado por uma fórmula, servindo como a principal prova de que o "remédio" (o projeto) vale o investimento solicitado.
+
+
+No campo de Resultados Esperados (Ganhos Reais), você deve inserir o cálculo e a justificativa para a entrada de "dinheiro novo" no caixa da empresa decorrente do projeto. Diferente de outras seções, este campo não aceita descrições puramente textuais; ele exige uma demonstração matemática clara de como o resultado foi alcançado.
+Abaixo estão as orientações sobre o que colocar e como escrever, baseadas nas fontes:
+O que colocar no campo
+Aumento de Receita ou Vendas: O ganho real ocorre quando o projeto permite que a empresa venda mais ou aumente seu faturamento. Por exemplo, se a implementação de uma funcionalidade em um portal de vendas aumentar o faturamento de zero para 40.000 por mês, isso é um ganho real.
+Cálculo Detalhado (Memória de Cálculo): É obrigatório descrever a fórmula utilizada para chegar ao valor final. A comissão aprobadora precisa entender a origem do número para validá-lo.
+Anexos (se necessário): Para cálculos financeiros mais complexos, as fontes sugerem utilizar um anexo específico (como um "Anexo 1 do cálculo do ganho real") para detalhar os números que suportam a proposta.
+A maneira mais adequada de escrever
+Padrão Explicação + Cálculo: A melhor forma de organizar o texto é colocar a explicação do ganho de um lado e o cálculo correspondente logo ao lado. Isso facilita a interpretação imediata por quem está avaliando a proposta.
+Seja Específico e Evite Textos Vagos: Frases genéricas como "vamos ter uma redução" ou "haverá ganho de produtividade" sem números não são adequadas para este campo. Você deve responder claramente: qual é a redução/ganho e como se chegou nesse resultado?.
+Não confunda com Ganho Potencial: Esta é uma distinção crítica nas fontes. Se a empresa está apenas deixando de desembolsar dinheiro (como evitar uma multa ou reduzir gastos com viagens), isso deve ser registrado como Ganho Potencial, e não Real. O Ganho Real é exclusivamente para quando o dinheiro entra efetivamente no caixa.
+Uso de IA para Organização: A Inteligência Artificial pode ser usada para simplificar, organizar e estruturar o texto em tópicos após você fornecer os dados base, garantindo que a proposta siga o padrão visual esperado.
+Em resumo, a escrita adequada deve ser direta, matemática e focada em faturamento adicional, sempre acompanhada da lógica de cálculo que sustenta o valor apresentado.
+
+
+No campo de Notas do Orçamento no Compass, você deve inserir informações complementares e padronizadas que clarifiquem os valores apresentados nas tabelas financeiras da proposta.
+Com base nas fontes, as diretrizes para este campo são:
+O que colocar nas Notas do Orçamento
+Incidência de Impostos: A informação mais comum é especificar se os valores da proposta consideram ou não os impostos (ex: "Valores não consideram impostos").
+Índices Financeiros: Menção ao índice financeiro utilizado para os cálculos, caso seja relevante para a interpretação dos custos.
+Detalhamento de Investimentos Específicos: O campo pode ser usado para descrever detalhes de investimentos que constam nas tabelas, como a especificação de hardwares.
+Observações de Tabela: Qualquer detalhe técnico ou financeiro pontual que precise figurar logo abaixo das tabelas de custos da proposta.
+A maneira mais adequada de escrever
+Extrema Concisão: A recomendação é que o texto seja muito curto, utilizando apenas duas ou três palavras ou frases curtíssimas (ex: "Impostos não inclusos").
+Foco na Padronização: O objetivo principal deste campo é garantir que informações essenciais de compliance financeiro estejam presentes de forma padronizada em todas as propostas.
+Uso Opcional: Caso não haja observações específicas sobre impostos, índices ou detalhes de hardware, o campo pode ser deixado em branco. Se estiver vazio, o sistema Compass irá ignorar o bloco e ele não aparecerá no documento final da proposta.
+Em resumo, as notas servem apenas para "carimbar" informações financeiras padrão que dão segurança à interpretação dos números pelo comitê, sem a necessidade de textos longos ou explicativos.
+
+
+A Análise Financeira no Compass é um campo essencialmente numérico e padronizado, onde o Payback atua como o indicador final de viabilidade econômica do projeto.
+Com base nas discussões dos especialistas, aqui está o detalhamento do que deve constar nesse campo, com foco especial no Payback:
+O Campo de Análise Financeira
+Esta seção não deve conter textos longos, mas sim valores específicos acompanhados de suas respectivas moedas. Os componentes principais são:
+Total de Investimento: Valor e moeda destinados à execução.
+Total de Despesas: Gastos operacionais do projeto.
+Total de Despesas Recorrentes: Custos de manutenção pós-projeto.
+Ganhos Potenciais e Reais: Devem ser acompanhados da memória de cálculo (ex: redução de FTE ou custos de impressão) para justificar os números apresentados.
+O Payback: Definição e Formato
+O Payback é o indicador que demonstra em quanto tempo o investimento será recuperado através dos ganhos gerados.
+Unidade de Medida: Deve ser registrado estritamente como um número representando meses.
+Posicionamento: Ele figura como o dado final da análise financeira, sintetizando a relação entre custo e benefício.
+Como o Payback é Calculado e Documentado
+Lógica do Cálculo: O Payback é obtido através da concatenação dos ganhos potenciais (e reais) com os gastos totais do projeto. Sem a identificação de ganhos mensuráveis, o cálculo do payback fica comprometido, o que pode impedir que a proposta seja levada à comissão.
+Uso de Planilhas: Existe uma planilha padrão de Payback na biblioteca de documentos dos comitês que deve ser utilizada para suportar esse cálculo. Em casos complexos ou de Business Case, essa planilha ou o fluxo de caixa detalhado podem ser incluídos como anexos para validar o número de meses informado no campo principal.
+Em resumo, o campo de análise financeira deve ser preenchido de forma a levar ao número de meses do Payback, fornecendo à comissão uma visão clara e objetiva do retorno sobre o capital investido.
