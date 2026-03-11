@@ -120,7 +120,7 @@ Os itens devem ser representados no campo `"conteudo"` utilizando `\n•` como s
 
 Exemplo de saída:
 
-`{"campo": "Análise Financeira", "conteudo": "• Total de investimento: 120.000 USD.\n• Total de despesas: 15.000 USD.\n• Total de despesas recorrentes: 2.000 USD/mês.\n• Ganhos potenciais estimados: 18.000 USD/mês.\n• Ganhos reais estimados: 10.000 USD/mês.\n• Payback: 5 meses."}`
+{"campo": "Análise Financeira", "conteudo": "• Total de investimento: 120.000 USD.\n• Total de despesas: 15.000 USD.\n• Total de despesas recorrentes: 2.000 USD/mês.\n• Ganhos potenciais estimados: 18.000 USD/mês.\n• Ganhos reais estimados: 10.000 USD/mês.\n• Payback: 5 meses."}
 
 ## Tratamento de edge cases
 

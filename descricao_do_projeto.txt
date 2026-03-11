@@ -69,7 +69,7 @@ A resposta deve conter exclusivamente as chaves `"campo"` e `"conteudo"` com seu
 
 Exemplo de saída:
 
-`{"campo": "Descrição do projeto na linguagem do negócio", "conteudo": "Propor a implantação de uma solução que automatize o processo de consolidação de dados operacionais, possibilitando maior agilidade na geração de informações estratégicas e melhoria no controle e tomada de decisão do negócio."}`
+{"campo": "Descrição do projeto na linguagem do negócio", "conteudo": "Propor a implantação de uma solução que automatize o processo de consolidação de dados operacionais, possibilitando maior agilidade na geração de informações estratégicas e melhoria no controle e tomada de decisão do negócio."}
 
 ## Tratamento de edge cases
 

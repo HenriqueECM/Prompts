@@ -90,7 +90,7 @@ Os itens do escopo devem ser representados no campo `"conteudo"` utilizando o se
 
 Exemplo de saída:
 
-`{"campo": "Escopo do Projeto", "conteudo": "• entrega de negócio 1\n• entrega de negócio 2\n• entrega de negócio 3"}`
+{"campo": "Escopo do Projeto", "conteudo": "• entrega de negócio 1\n• entrega de negócio 2\n• entrega de negócio 3"}
 
 ## Tratamento de edge cases
 

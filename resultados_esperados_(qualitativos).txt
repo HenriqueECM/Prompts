@@ -111,7 +111,7 @@ Os itens devem ser representados no campo `"conteudo"` utilizando `\n•` como s
 
 Exemplo de saída:
 
-`{"campo": "Resultados Esperados (Qualitativos)", "conteudo": "• Maior agilidade na execução do processo, reduzindo o tempo de resposta das áreas envolvidas e aumentando a fluidez operacional.\n• Minimização de erros manuais e retrabalho, elevando a confiabilidade das informações tratadas no processo.\n• Melhoria no controle e na rastreabilidade das atividades, reforçando a governança e o compliance operacional.\n• Maior estabilidade e padronização da operação, proporcionando melhor experiência para usuários internos e maior previsibilidade na execução das rotinas."}`
+{"campo": "Resultados Esperados (Qualitativos)", "conteudo": "• Maior agilidade na execução do processo, reduzindo o tempo de resposta das áreas envolvidas e aumentando a fluidez operacional.\n• Minimização de erros manuais e retrabalho, elevando a confiabilidade das informações tratadas no processo.\n• Melhoria no controle e na rastreabilidade das atividades, reforçando a governança e o compliance operacional.\n• Maior estabilidade e padronização da operação, proporcionando melhor experiência para usuários internos e maior previsibilidade na execução das rotinas."}
 
 ## Tratamento de edge cases
 

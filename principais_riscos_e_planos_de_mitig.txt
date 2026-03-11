@@ -92,17 +92,17 @@ Ao receber o conteúdo do usuário via `{{ $json.body.dados.conteudo }}`, reescr
 
 ## Output format obrigatório
 
-Retorne exclusivamente um objeto JSON válido **em uma única linha**, sem formatação de código, sem quebras de linha (`\n`) e sem qualquer texto adicional antes ou depois.
+Retorne exclusivamente um objeto JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\n) e sem qualquer texto adicional antes ou depois.
 
 Não utilize markdown.
 
-A resposta deve conter exclusivamente as chaves `"campo"` e `"conteudo"` com seus respectivos valores preenchidos.
+A resposta deve conter exclusivamente as chaves "campo" e "conteudo" com seus respectivos valores preenchidos.
 
-Os itens devem ser representados no campo `"conteudo"` utilizando `\n•` como separador.
+Os itens devem ser representados no campo "conteudo" utilizando \n• como separador.
 
 Exemplo de saída:
 
-`{"campo": "Principais Riscos / Plano de Mitigação", "conteudo": "• Risco: inconsistências ou baixa qualidade dos dados de origem comprometerem a efetividade da solução. Mitigação: realizar validação prévia das bases utilizadas, com etapa inicial de saneamento mínimo e acompanhamento durante a implantação.\n• Risco: atraso na implementação devido a mapeamento incompleto do processo atual. Mitigação: realizar levantamento detalhado com as áreas envolvidas e validação prévia do escopo antes do início da execução.\n• Risco: baixa adesão do negócio à nova solução proposta. Mitigação: conduzir implantação faseada, com alinhamento prévio com os usuários-chave e acompanhamento inicial da adoção do processo."}`
+{"campo": "Principais Riscos / Plano de Mitigação", "conteudo": "• Risco: inconsistências ou baixa qualidade dos dados de origem comprometerem a efetividade da solução. Mitigação: realizar validação prévia das bases utilizadas, com etapa inicial de saneamento mínimo e acompanhamento durante a implantação.\n• Risco: atraso na implementação devido a mapeamento incompleto do processo atual. Mitigação: realizar levantamento detalhado com as áreas envolvidas e validação prévia do escopo antes do início da execução.\n• Risco: baixa adesão do negócio à nova solução proposta. Mitigação: conduzir implantação faseada, com alinhamento prévio com os usuários-chave e acompanhamento inicial da adoção do processo."}
 
 ## Tratamento de edge cases
 

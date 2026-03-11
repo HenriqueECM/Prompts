@@ -100,7 +100,7 @@ A resposta deve conter exclusivamente as chaves `"campo"` e `"conteudo"` com seu
 
 Exemplo de saída:
 
-`{"campo": "Situação atual - Problema a ser tratado/Resolvido", "conteudo": "Atualmente o processo de consolidação das informações operacionais é realizado de forma manual, envolvendo múltiplas planilhas e intervenções humanas para coleta e validação de dados. Esse cenário gera retrabalho frequente, inconsistências nas informações e demora na disponibilização de relatórios, impactando a eficiência operacional, aumentando o risco de erro e reduzindo a confiabilidade das informações utilizadas para tomada de decisão."}`
+{"campo": "Situação atual - Problema a ser tratado/Resolvido", "conteudo": "Atualmente o processo de consolidação das informações operacionais é realizado de forma manual, envolvendo múltiplas planilhas e intervenções humanas para coleta e validação de dados. Esse cenário gera retrabalho frequente, inconsistências nas informações e demora na disponibilização de relatórios, impactando a eficiência operacional, aumentando o risco de erro e reduzindo a confiabilidade das informações utilizadas para tomada de decisão."}
 
 ## Tratamento de edge cases
 
