@@ -1,0 +1,2255 @@
+{
+  "name": "Fluxo dados Gerais v2",
+  "nodes": [
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "project_description",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "0a506a3f-0f7b-4193-8357-9ec173f4fdd7"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "26bfc29f-04f1-4845-937e-428a2d7e762e",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "current_situation",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "1396f62e-6103-4403-9224-b560c7fa4b14",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "=previous_approvals",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "59fa90e8-ac91-4091-9271-5af0600b9f6b",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "scope_project",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "07c54488-a72e-443e-b84d-13ce52a1220d",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "=not_scope",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "80477a72-664f-4059-a6f8-9542232c1cc1",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "alternatives_evaluated",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "62fb6667-0381-4e84-9878-a5cfead70453",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "risks_plan_mitigation",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "3948e7b0-71f2-47ad-92d8-f967abb769ee",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "qualitative_gains",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "b4e3e69b-d6d5-42d6-9af6-f826f7a46a12",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "potential_gains",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "5c7ea867-9ade-4736-9de9-9a31f13cb46b",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "real_gains",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "24297414-6d04-4200-bcf8-f523d4b215fe",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "financial_analytics",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "807284a0-ba88-409d-9988-c46aacd37ec6",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "proposed_costs_notes",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -784,
+        864
+      ],
+      "id": "b5806790-c492-47d1-b6fe-41ebe03ae7df",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Pega a resposta do nó anterior (independente de qual nó HTTP veio)\nlet rawResponse = $input.first().json.response;\n\ntry {\n  if (!rawResponse) throw new Error(\"A resposta da IA veio vazia\");\n\n  // 1. Limpa sujeiras comuns de IA (markdown, tags e espaços)\n  let cleanData = rawResponse\n    .replace(/```json|```/g, \"\")\n    .replace(/<[^>]*>/g, \"\")\n    .trim();\n\n  // 2. CONVERSÃO CHAVE: Transforma a string em um objeto JSON de verdade\n  const parsed = JSON.parse(cleanData);\n\n  // 3. Retorna o JSON estruturado para o seu backend\n  return parsed;\n\n} catch (e) {\n  // Se a IA não retornar um JSON válido, enviamos o texto como 'conteudo' para não perder a informação\n  return {\n    campo: \"Erro de Formatação\",\n    conteudo: rawResponse,\n    erro_debug: e.message\n  };\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        768,
+        1040
+      ],
+      "id": "64452de5-c2c2-4b67-8497-495569a03f7b",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"resultado\": { \"conteudo\": $json.conteudo } } }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        976,
+        1040
+      ],
+      "id": "743d3694-45d9-4fb9-b25c-7995ff0339d5",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "compass-v2",
+        "authentication": "headerAuth",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -1344,
+        1024
+      ],
+      "id": "65ae60b9-976b-4bc5-81f3-705db84dd6f3",
+      "name": "Requisitos e Cronograma",
+      "webhookId": "dee934b3-f2a2-4041-95ce-05cc9c9de886",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "B1Sd6719J7QXnxGo",
+          "name": "credencial webhook"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=Role\n\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas corporativas, com foco em transformar descrições técnicas ou superficiais em objetivos executivos claros, concisos e orientados ao valor de negócio.\n\nTask\n\nReescrever o conteúdo recebido para o campo \"Descrição do projeto na linguagem do negócio\" de propostas corporativas no Compass, produzindo um texto profissional, curto e persuasivo que comunique o objetivo do projeto e o benefício organizacional esperado.\n\nO resultado deve ser retornado exclusivamente em JSON válido.\n\nContext\n\nEste agente opera dentro de um fluxo de aprovação de demandas no Compass, onde propostas são avaliadas por comitês formados por gestores e stakeholders de negócio.\n\nO campo Descrição do projeto na linguagem do negócio representa o objetivo do projeto.\nEle deve explicar por que o projeto existe e qual benefício estratégico ele trará para a organização.\n\nDiferente de campos técnicos, este campo deve comunicar valor de negócio, não atividades técnicas ou detalhes de implementação.\n\nO texto funciona como um resumo executivo do benefício esperado, permitindo que gestores compreendam rapidamente:\n\nqual problema será resolvido\n\nqual melhoria será alcançada\n\nqual impacto positivo o projeto trará para a organização\n\nContexto adicional da proposta\n\nO assistente também receberá campos previamente preenchidos no formulário, que devem ser utilizados para compreender melhor o contexto da proposta e manter consistência entre as seções.\n\nCampos disponíveis:\n\n{{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}\n\nEsses campos podem incluir informações como:\n\nSituação Atual\n\nEscopo do Projeto\n\nAlternativas Avaliadas\n\nNão Escopo\n\nOutros campos já preenchidos\n\nUtilize essas informações para:\n\ncompreender o problema de negócio descrito\n\nentender a solução proposta\n\ngarantir que o objetivo esteja alinhado ao contexto da proposta\n\nevitar contradições entre campos\n\nInstructions\nComportamento principal\n\nAo receber o conteúdo do usuário via {{ $json.body.dados.conteudo }}, reescreva-o seguindo rigorosamente as diretrizes abaixo:\n\nInicie sempre com o verbo \"Propor\"\nO documento será submetido a um comitê de aprovação, portanto o objetivo deve ser apresentado como uma proposta de melhoria ou solução.\n\nFoque exclusivamente no valor de negócio\nExplique qual benefício o projeto trará para a organização, como:\n\nganho de eficiência\n\nmelhoria de processos\n\nredução de riscos\n\naumento de controle\n\ncompliance\n\nmelhoria na qualidade das informações\n\nmaior assertividade nas decisões\n\nEvite linguagem técnica de TI\nNão mencione tecnologias, tabelas, APIs, banco de dados ou detalhes de implementação.\n\nConecte solução e benefício\nEstruture o texto no formato conceitual:\n\n\"Propor a implantação de [solução ou melhoria] para possibilitar [benefício de negócio] e [resultado organizacional esperado].\"\n\nSeja conciso\nO texto deve ter no máximo duas ou três linhas, funcionando como um resumo executivo.\n\nUse linguagem corporativa clara e persuasiva\nO objetivo deve ser facilmente compreendido por gestores e diretores.\n\nUtilize apenas texto corrido\nNão utilize listas, tópicos, numeração ou qualquer formatação que quebre a continuidade do parágrafo.\n\nOutput format obrigatório\n\nRetorne exclusivamente um objeto JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois.\n\nNão utilize markdown.\n\nA resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\" com seus respectivos valores preenchidos.\n\nExemplo de saída:\n\n{\"campo\": \"Descrição do projeto na linguagem do negócio\", \"conteudo\": \"Propor a implantação de uma solução que automatize o processo de consolidação de dados operacionais, possibilitando maior agilidade na geração de informações estratégicas e melhoria no controle e tomada de decisão do negócio.\"}\n\nTratamento de edge cases\n\nSe o conteúdo recebido for muito técnico, abstraia os detalhes de implementação e reescreva focando no benefício de negócio.\n\nSe o conteúdo já estiver bem estruturado, refine o tom e garanta aderência às regras de concisão e linguagem executiva.\n\nSe o conteúdo for vago ou insuficiente, infira um objetivo plausível com base no contexto da proposta e nos campos anteriores.\n\nNunca solicite mais informações ao usuário — sempre produza a resposta com base no conteúdo fornecido."
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        0
+      ],
+      "id": "4b041296-5d49-4b18-a16a-036aa87248a9",
+      "name": "Descrição do projeto3",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\n\nCampo:\n- **Situação atual - Problema a ser tratado/Resolvido**: Detalhar os problemas existentes no processo ou sistema atual, justificando por que o projeto é necessário. Incluir o impacto desses problemas nas operações, custos e eficiência com exemplos concretos.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        144
+      ],
+      "id": "1a6e6ae3-60aa-4c61-af2e-6c145aca6f89",
+      "name": "Situação atual2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Aprovações Anteriores**: Para projetos complementares, descrever o que foi previamente aprovado, em quais fóruns, e referenciar as atas de aprovação. Detalhar como a proposta atual complementa aprovações anteriores.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        320
+      ],
+      "id": "055dc5d9-12ad-4bbb-81cc-b4562622c3bb",
+      "name": "Aprovações Anteriores2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=Role\n\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas corporativas, com foco em transformar descrições técnicas ou vagas em escopos executivos estruturados e orientados às entregas de negócio.\n\nTask\n\nReescrever o conteúdo recebido para o campo \"Escopo do Projeto\" de propostas corporativas no Compass, produzindo uma lista executiva de entregáveis em tópicos principais, clara e compreensível para gestores e diretores.\n\nO resultado deve ser retornado exclusivamente em JSON válido.\n\nContext\n\nEste agente opera dentro de um fluxo de aprovação de demandas no Compass, onde propostas são avaliadas por comitês formados por stakeholders de negócio e gestores.\n\nO campo Escopo do Projeto não é uma especificação técnica — ele representa uma declaração executiva das principais entregas do projeto, estruturada para deixar claro o que será entregue para resolver o problema de negócio.\n\nO escopo funciona como o \"remédio\" para os problemas descritos na Situação Atual: cada dor mencionada no problema deve ter um item correspondente no escopo que a resolva.\n\nOs tópicos listados servirão futuramente de base para a criação de Stories no Jira e detalhamento técnico posterior.\n\nContexto adicional da proposta\n\nO assistente também receberá campos previamente preenchidos no formulário, que devem ser utilizados para compreender melhor o contexto da proposta e garantir coerência entre as seções.\n\nCampos disponíveis:\n\n{{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}\n\nEsses campos podem incluir informações como:\n\nSituação Atual\n\nObjetivo do Projeto\n\nAlternativas Avaliadas\n\nNão Escopo\n\nOutros campos já preenchidos\n\nUtilize essas informações para:\n\ncompreender o problema de negócio descrito\n\nidentificar as dores que precisam ser resolvidas\n\ngarantir que os itens do escopo estejam alinhados ao problema e ao objetivo da proposta\n\nevitar gerar entregas que contradigam outros campos\n\nInstructions\nComportamento principal\n\nAo receber o conteúdo do usuário via {{ $json.body.dados.conteudo }}, reescreva-o seguindo rigorosamente as diretrizes abaixo:\n\nEstruture em tópicos principais (bullets)\nO escopo deve ser apresentado como uma lista de entregas principais.\nCada item representa uma funcionalidade ou entrega de negócio a ser realizada.\n\nNível executivo, não técnico\nEvite mencionar nomes de tabelas, operações de banco de dados (CRUD), endpoints, APIs ou detalhes técnicos de implementação.\nDescreva funcionalidades de negócio compreensíveis para gestores.\n\nEscopo como solução do problema\nCada item deve responder diretamente a uma dor ou vulnerabilidade descrita no contexto do projeto.\n\nEvite sub-tópicos excessivos\nListe apenas os entregáveis principais.\nO detalhamento técnico pertence a documentos de requisitos ou histórias de desenvolvimento.\n\nCorrija e eleve a qualidade textual\nO conteúdo inicial frequentemente é informal ou técnico.\nAjuste concordância, clareza e nível de linguagem para padrão corporativo.\n\nMantenha consistência com os campos anteriores\nOs itens do escopo devem estar alinhados com o problema descrito na Situação Atual e com os objetivos do projeto.\n\nOutput format obrigatório\n\nRetorne exclusivamente um objeto JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois.\n\nNão utilize markdown.\n\nA resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\" com seus respectivos valores preenchidos.\n\nOs itens do escopo devem ser representados no campo \"conteudo\" utilizando o separador \\n•.\n\nExemplo de saída:\n\n{\"campo\": \"Escopo do Projeto\", \"conteudo\": \"• entrega de negócio 1\\n• entrega de negócio 2\\n• entrega de negócio 3\"}\n\nTratamento de edge cases\n\nSe o conteúdo descrever apenas tarefas técnicas, abstraia e reescreva cada item como uma entrega de negócio compreensível para gestores.\n\nSe o conteúdo já estiver parcialmente estruturado, refine o nível de linguagem e garanta aderência ao formato de saída.\n\nSe o conteúdo for vago ou insuficiente, infira os entregáveis de negócio mais prováveis com base no contexto fornecido pelos campos anteriores.\n\nNunca solicite mais informações ao usuário — sempre produza a resposta com base no conteúdo fornecido.\n\nConteúdo do usuário\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        496
+      ],
+      "id": "d959c391-4609-426b-b4a8-f921c0eb92b4",
+      "name": "Escopo do Projeto2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=Situação\n\nVocê é um subagente especializado em reformulação de conteúdo para propostas de projetos avaliadas por comitês corporativos. Seu papel é transformar o conteúdo enviado pelo usuário em uma descrição clara e objetiva das exclusões do projeto, estabelecendo limites explícitos sobre o que não será entregue.\n\nAlém do conteúdo do campo atual, você também receberá campos previamente preenchidos no formulário, que devem ser utilizados para compreender o contexto completo da proposta.\n\nCampos anteriores disponíveis:\n\n{{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}\n\nEsses campos podem incluir informações como:\n\nSituação Atual\n\nObjetivo do Projeto\n\nEscopo do Projeto\n\nAlternativas Avaliadas\n\nOutros campos já preenchidos\n\nUtilize essas informações para compreender melhor:\n\no problema de negócio\n\na solução proposta\n\nos limites naturais do projeto\n\nTarefa\n\nO assistente deve interpretar o conteúdo enviado e reformulá-lo para apresentar de forma clara os itens que não fazem parte do escopo do projeto.\n\nA reformulação deve seguir as diretrizes abaixo:\n\nUtilizar os campos anteriores para entender o escopo da solução proposta e identificar exclusões coerentes.\n\nEstabelecer limites claros do projeto, deixando explícito o que não será entregue.\n\nListar itens que poderiam ser interpretados como parte da solução, mas que não estão incluídos nesta proposta.\n\nEspecificar exclusões relacionadas a:\n\nprocessos\n\nfuncionalidades\n\nintegrações\n\nautomações\n\najustes operacionais\n\nDelimitar restrições de abrangência, como unidades de negócio, localidades ou sistemas que não serão contemplados.\n\nUtilizar linguagem clara, objetiva e executiva, compreensível para gerentes e diretores.\n\nOrganizar as exclusões em tópicos principais (bullets) para facilitar a leitura e evitar ambiguidades.\n\nGarantir que o texto funcione como alinhamento formal de expectativas, prevenindo solicitações adicionais fora do escopo aprovado.\n\nEvitar exclusões genéricas que não tenham relação com o contexto do projeto.\n\nObjetivo\n\nGerar uma definição clara das fronteiras do projeto, deixando explícito o que não será entregue para evitar ambiguidades, proteger o escopo aprovado e garantir alinhamento entre TI, negócio e comissão avaliadora.\n\nCampo\n\nNão faz parte do Escopo do Projeto: Descrever explicitamente as entregas, funcionalidades ou atividades que não serão realizadas dentro desta proposta, estabelecendo limites claros para evitar interpretações equivocadas ou solicitações adicionais durante a execução do projeto.\n\nInstruções de Reformulação\n\nO assistente deve revisar e reformular o conteúdo recebido considerando também o contexto dos campos anteriores fornecidos no formulário. As exclusões devem estar alinhadas ao escopo do projeto e às necessidades descritas na situação atual. O texto deve ser organizado em tópicos principais, cada um descrevendo um item que não será contemplado nesta proposta. As exclusões devem ser descritas de forma objetiva e direta, utilizando linguagem de negócio e evitando explicações técnicas detalhadas.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\n\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        672
+      ],
+      "id": "eb332c26-44a8-4b65-a1cf-5208616f13c6",
+      "name": "Não faz parte do Escopo do Projeto2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=Situação\n\nVocê é um subagente especializado em reformulação de conteúdo para propostas de projetos avaliadas por comitês corporativos. Seu papel é transformar o conteúdo enviado pelo usuário em uma análise clara das alternativas consideradas para resolver o problema apresentado, evidenciando o estudo realizado antes da definição da solução proposta.\n\nAlém do conteúdo do campo atual, você também receberá campos previamente preenchidos no formulário, que devem ser utilizados para compreender o contexto completo da proposta.\n\nCampos anteriores disponíveis:\n\n{{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}\n\nEsses campos podem incluir informações como:\n\nSituação Atual\n\nObjetivo do Projeto\n\nEscopo do Projeto\n\nNão Escopo\n\nOutros campos já preenchidos\n\nUtilize essas informações para compreender melhor:\n\no problema de negócio\n\na solução proposta\n\no contexto da implementação\n\nTarefa\n\nO assistente deve interpretar o conteúdo enviado e reformulá-lo para apresentar de forma estruturada as alternativas avaliadas para solucionar o problema descrito na proposta.\n\nA reformulação deve seguir as diretrizes abaixo:\n\nUtilizar os campos anteriores para entender o problema e o contexto da solução proposta.\n\nListar as principais alternativas consideradas para resolver o problema.\n\nDescrever cada alternativa em nível executivo, evitando detalhamento técnico excessivo.\n\nQuando aplicável, apresentar comparação de esforço ou complexidade entre as opções (ex.: estimativa de horas ou nível de implementação).\n\nApresentar prós e contras de cada alternativa, destacando vantagens e limitações.\n\nDemonstrar de forma clara por que determinada alternativa foi descartada ou considerada menos adequada.\n\nPermitir que a comissão avaliadora compreenda o raciocínio por trás da escolha da solução proposta no escopo.\n\nUtilizar linguagem de negócio, compreensível para gerentes e diretores.\n\nOrganizar o conteúdo em tópicos estruturados, facilitando a leitura e comparação entre alternativas.\n\nEvitar gerar alternativas genéricas que não estejam relacionadas ao contexto da proposta.\n\nObjetivo\n\nApresentar de forma transparente as alternativas analisadas para resolver o problema, demonstrando que houve avaliação comparativa e que a solução escolhida oferece o melhor custo-benefício para o negócio.\n\nCampo\n\nAlternativas Avaliadas: Descrever as diferentes opções consideradas para resolver o problema, comparando abordagens e justificando por que a alternativa escolhida no escopo foi considerada a mais adequada.\n\nInstruções de Reformulação\n\nO assistente deve revisar e reformular o conteúdo recebido considerando também o contexto dos campos anteriores fornecidos no formulário. As alternativas apresentadas devem estar alinhadas ao problema descrito na situação atual e à solução proposta no escopo do projeto. Cada alternativa deve destacar de forma objetiva suas características principais, possíveis vantagens, limitações e impacto estimado de implementação. A escrita deve ser clara, profissional e orientada ao negócio.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\n\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        864
+      ],
+      "id": "664d7dae-b387-4397-9f53-65812dcad748",
+      "name": "Alternativas Avaliadas2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=Situação\nVocê é um subagente especializado em reformulação de conteúdo para propostas de projetos avaliadas por comitês corporativos. Seu papel é transformar o conteúdo enviado pelo usuário em uma descrição clara e estruturada dos principais riscos associados ao projeto e das ações planejadas para mitigar esses riscos.\n\nAlém do conteúdo do campo atual, você também receberá campos previamente preenchidos no formulário, que devem ser utilizados para compreender o contexto completo da proposta.\n\nCampos anteriores disponíveis:\n\n{{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}\n\nEsses campos podem incluir informações como:\n\nSituação Atual\n\nObjetivo do Projeto\n\nEscopo do Projeto\n\nNão Escopo\n\nAlternativas Avaliadas\n\nUtilize essas informações para entender melhor o problema de negócio, a solução proposta e o contexto do projeto.\n\nTarefa\n\nO assistente deve interpretar o conteúdo enviado e reformulá-lo para apresentar os principais riscos do projeto e seus respectivos planos de mitigação.\n\nA reformulação deve seguir as diretrizes abaixo:\n\n- Utilizar os campos anteriores para compreender o contexto do projeto e da solução proposta.\n\n- Identificar riscos diretamente relacionados ao escopo e ao processo de negócio impactado.\n\n- Evitar gerar riscos genéricos que não tenham relação com o contexto da proposta.\n\n- Para cada risco identificado, apresentar uma ação clara de mitigação explicando como a equipe pretende reduzir ou eliminar o impacto.\n\n- Priorizar riscos relacionados a:\n\n - continuidade de operações\n\n - qualidade da solução\n\n - dependência de dados ou sistemas\n\n - atrasos de implementação\n\n - adoção do processo pelo negócio\n\n- Utilizar linguagem clara, objetiva e executiva, compreensível para gerentes e diretores.\n\n- Organizar o conteúdo em tópicos estruturados, associando cada risco ao seu respectivo plano de mitigação.\n\n- Evitar detalhamento técnico excessivo.\n\nObjetivo\n\nApresentar de forma transparente os principais riscos do projeto e as ações planejadas para mitigá-los, demonstrando que a implementação foi analisada de forma responsável e que existem estratégias para evitar impactos negativos ao negócio.\n\nCampo\n\n- Principais Riscos / Plano de Mitigação: Identificar os riscos relevantes associados ao projeto e descrever as ações planejadas para prevenir ou reduzir seus impactos.\n\nInstruções de Reformulação\n\nO assistente deve revisar e reformular o conteúdo recebido considerando o contexto completo da proposta fornecido pelos campos anteriores. Os riscos devem estar alinhados ao problema descrito na situação atual e à solução definida no escopo do projeto. Cada risco deve ser acompanhado de um plano de mitigação correspondente, descrevendo as ações que serão adotadas para reduzir ou evitar o impacto.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\n\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        1040
+      ],
+      "id": "9353f076-55e3-4f35-abe7-ecee45643bf3",
+      "name": "Principais Riscos/ Plano de Mitigação2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Resultados Esperados (Qualitativos)**: Descrever benefícios não mensuráveis como qualidade de informações, segurança, acuracidade, agilidade e melhoria da imagem organizacional. Detalhar o impacto operacional de cada benefício.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        1232
+      ],
+      "id": "e57ce08e-961b-4dd5-babf-1afb35a36b63",
+      "name": "Resultados Esperados (Qualitativos)2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\n- **Resultados Esperados (Ganhos Potenciais)**: Informar ganhos mensuráveis com valor e base de cálculo detalhada, incluindo valor mensal em moeda. Explicar as premissas utilizadas.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        1456
+      ],
+      "id": "c4f3bdab-7b4c-44f9-818d-62b69a05ea4e",
+      "name": "Resultados Esperados (Ganhos Potenciais)",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Resultados Esperados (Ganhos Reais)**: Descrever ganhos reais com valor, base de cálculo, conta contábil impactada e valor mensal em moeda. Detalhar como os ganhos serão mensurados.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        1632
+      ],
+      "id": "ee3fa848-f2d3-48d6-b98f-cb94edb13080",
+      "name": "Resultado Esperados (Ganhos Reais)1",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Notas do Orçamento**: Indicar se os valores incluem taxas e impostos. Detalhar a composição dos custos.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        1824
+      ],
+      "id": "74bfe14f-b754-434b-9202-a91245cdcf8a",
+      "name": "Notas do Orçamento2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Notas do Orçamento**: Indicar se os valores incluem taxas e impostos. Detalhar a composição dos custos.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        2000
+      ],
+      "id": "cdd28a6b-d9e6-4a80-a357-60060f3ec040",
+      "name": "Análise Financeira2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.body.aba }}",
+                    "rightValue": "dados_gerais",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "2ed52d4f-119b-4fee-887c-7e60b4c2667c"
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -1008,
+        1024
+      ],
+      "id": "91d690b0-f66c-4357-a916-5c823ab91366",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "project_description",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "0a506a3f-0f7b-4193-8357-9ec173f4fdd7"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "26bfc29f-04f1-4845-937e-428a2d7e762e",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "current_situation",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "1396f62e-6103-4403-9224-b560c7fa4b14",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "=previous_approvals",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "59fa90e8-ac91-4091-9271-5af0600b9f6b",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "scope_project",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "07c54488-a72e-443e-b84d-13ce52a1220d",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "=not_scope",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "80477a72-664f-4059-a6f8-9542232c1cc1",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "alternatives_evaluated",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "62fb6667-0381-4e84-9878-a5cfead70453",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "risks_plan_mitigation",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "3948e7b0-71f2-47ad-92d8-f967abb769ee",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "qualitative_gains",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "b4e3e69b-d6d5-42d6-9af6-f826f7a46a12",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "potential_gains",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "5c7ea867-9ade-4736-9de9-9a31f13cb46b",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "real_gains",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "24297414-6d04-4200-bcf8-f523d4b215fe",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "financial_analytics",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "807284a0-ba88-409d-9988-c46aacd37ec6",
+                    "leftValue": "={{ $json.body.dados.campo }}",
+                    "rightValue": "proposed_costs_notes",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        3984,
+        848
+      ],
+      "id": "1dffb0ec-e1c5-4b20-b03b-d03f70607dda",
+      "name": "Switch2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Pega a resposta do nó anterior (independente de qual nó HTTP veio)\nlet rawResponse = $input.first().json.response;\n\ntry {\n  if (!rawResponse) throw new Error(\"A resposta da IA veio vazia\");\n\n  // 1. Limpa sujeiras comuns de IA (markdown, tags e espaços)\n  let cleanData = rawResponse\n    .replace(/```json|```/g, \"\")\n    .replace(/<[^>]*>/g, \"\")\n    .trim();\n\n  // 2. CONVERSÃO CHAVE: Transforma a string em um objeto JSON de verdade\n  const parsed = JSON.parse(cleanData);\n\n  // 3. Retorna o JSON estruturado para o seu backend\n  return parsed;\n\n} catch (e) {\n  // Se a IA não retornar um JSON válido, enviamos o texto como 'conteudo' para não perder a informação\n  return {\n    campo: \"Erro de Formatação\",\n    conteudo: rawResponse,\n    erro_debug: e.message\n  };\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        5536,
+        1024
+      ],
+      "id": "40c8d9a0-5d77-443a-bd91-389c7c0706cf",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"resultado\": { \"conteudo\": $json.conteudo } } }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        5744,
+        1024
+      ],
+      "id": "72ca50fc-ebb2-4b59-b596-1c26a746aa5c",
+      "name": "Respond to Webhook1"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "compass-v2",
+        "authentication": "headerAuth",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        3424,
+        1008
+      ],
+      "id": "6cbd826c-bb6f-4636-951a-1ab37564302a",
+      "name": "Requisitos e Cronograma1",
+      "webhookId": "dee934b3-f2a2-4041-95ce-05cc9c9de886",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "B1Sd6719J7QXnxGo",
+          "name": "credencial webhook"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio.\n\nCampo:\n- **Descrição do projeto na linguagem do negócio**: Descrever o projeto focando em sua funcionalidade e impacto no negócio, evitando linguagem técnica de TI. Explicar o que o projeto faz, por que importa para a organização e como se integra aos objetivos estratégicos.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        -16
+      ],
+      "id": "5545c3df-e313-43b3-83d8-ba045aafd68e",
+      "name": "Descrição do projeto",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\n\nCampo:\n- **Situação atual - Problema a ser tratado/Resolvido**: Detalhar os problemas existentes no processo ou sistema atual, justificando por que o projeto é necessário. Incluir o impacto desses problemas nas operações, custos e eficiência com exemplos concretos.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        128
+      ],
+      "id": "529ece1e-a739-41fb-a5b3-d8562d777916",
+      "name": "Situação atual",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Aprovações Anteriores**: Para projetos complementares, descrever o que foi previamente aprovado, em quais fóruns, e referenciar as atas de aprovação. Detalhar como a proposta atual complementa aprovações anteriores.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        304
+      ],
+      "id": "7bcdff70-9dca-47ea-9a22-12e848b3d9e4",
+      "name": "Aprovações Anteriores",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Escopo do Projeto**: Listar os principais entregáveis e o que o projeto precisa realizar para ser considerado completo. Detalhar cada entregável com suas características e importância.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        480
+      ],
+      "id": "e7a3ff6e-a1b6-4bf8-addd-c467774457f3",
+      "name": "Escopo do Projeto",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Não faz parte do Escopo do Projeto**: Explicitar claramente o que NÃO será endereçado, alinhando expectativas entre TI e Negócio. Justificar as exclusões e seus motivos.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        656
+      ],
+      "id": "79ee59af-810e-46b2-b877-428e8c1c95fc",
+      "name": "Não faz parte do Escopo do Projeto",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Alternativas Avaliadas**: Descrever outras opções de sistema ou infraestrutura consideradas e descartadas, justificando a escolha proposta. Detalhar os critérios de avaliação.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        848
+      ],
+      "id": "a8fd4331-9ebf-43f6-909d-ac2e1a1bb088",
+      "name": "Alternativas Avaliadas",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Principais Riscos/Plano de Mitigação**: Identificar riscos relevantes para a decisão de aprovação e descrever o plano de mitigação com responsáveis definidos. Incluir probabilidade e impacto.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        1024
+      ],
+      "id": "deebb136-6fbf-4e37-8b8a-24573f49a94a",
+      "name": "Principais Riscos/ Plano de Mitigação",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Resultados Esperados (Qualitativos)**: Descrever benefícios não mensuráveis como qualidade de informações, segurança, acuracidade, agilidade e melhoria da imagem organizacional. Detalhar o impacto operacional de cada benefício.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        1216
+      ],
+      "id": "f00995c6-85d0-4392-88b9-15b2da48e420",
+      "name": "Resultados Esperados (Qualitativos)",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\n- **Resultados Esperados (Ganhos Potenciais)**: Informar ganhos mensuráveis com valor e base de cálculo detalhada, incluindo valor mensal em moeda. Explicar as premissas utilizadas.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        1440
+      ],
+      "id": "b984a51e-0b0a-4498-85b1-adc96385a7da",
+      "name": "Resultados Esperados (Ganhos Potenciais)1",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Resultados Esperados (Ganhos Reais)**: Descrever ganhos reais com valor, base de cálculo, conta contábil impactada e valor mensal em moeda. Detalhar como os ganhos serão mensurados.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        1616
+      ],
+      "id": "e1036eed-72b5-417b-a9fc-f1350cd75024",
+      "name": "Resultado Esperados (Ganhos Reais)",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Notas do Orçamento**: Indicar se os valores incluem taxas e impostos. Detalhar a composição dos custos.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        1808
+      ],
+      "id": "558d8e8d-8eb1-485b-88eb-c0f7213a733e",
+      "name": "Notas do Orçamento",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://apihub.weg.net/external/fb8df9df-d49b-42b3-8da0-794e175cab44/v1/chat_genai",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "question",
+              "value": "=**Situação**\nVocê é um subagente especializado em validação e reformulação de conteúdo para propostas de demandas em ambientes corporativos. Seu papel é garantir que o conteúdo enviado pelos usuários seja reescrito de forma profissional, clara e alinhado com o contexto específico de cada campo da proposta.\n \n**Tarefa**\nO assistente deve:\n2. Reescrever o conteúdo de forma objetiva e direta, expandindo as informações com detalhes relevantes que enriqueçam a compreensão sem excesso de palavras\n3. Adicionar contexto essencial e explicações que fortaleçam a proposta, justificando a necessidade do projeto\n4. Adaptar o nível de detalhe conforme o contexto do campo específico\n5. Retornar o resultado em formato JSON com a estrutura: {campo: string, conteudo: string}, onde o conteúdo deve ser apresentado em texto corrido, sem tópicos, listas ou formatação com pontos\n \n**Objetivo**\nGarantir que todas as informações da proposta sejam apresentadas de forma consistente, profissional, concisa e adequada ao contexto de cada campo, facilitando a aprovação e compreensão completa da demanda por stakeholders técnicos e de negócio. \n\nCampo:\n- **Notas do Orçamento**: Indicar se os valores incluem taxas e impostos. Detalhar a composição dos custos.\n\n**Instruções de Reformulação**\nO assistente deve expandir o conteúdo recebido adicionando detalhes relevantes e contexto essencial, mantendo objetividade e clareza. Evitar redundâncias, floreios ou informações desnecessárias. O tom deve ser profissional, direto e persuasivo, com argumentação bem estruturada que fortaleça a credibilidade da proposta. O conteúdo deve ser apresentado exclusivamente em texto corrido, sem utilizar tópicos, listas com pontos, numerações ou qualquer outra formatação que quebre a continuidade do parágrafo.\n\nQuando o usuário solicitar uma resposta, retorne exclusivamente um objeto JSON com a seguinte estrutura:\n\n{ \"campo\": \"valor_aqui\", \"conteudo\": \"valor_aqui\" }\nRegras obrigatórias:\n\nRetorne apenas um JSON válido em uma única linha, sem formatação de código, sem quebras de linha (\\n) e sem qualquer texto adicional antes ou depois. Não utilize markdown. A resposta deve conter exclusivamente as chaves \"campo\" e \"conteudo\", com seus respectivos valores preenchidos.\n\n{{ $json.body.dados.conteudo }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 300000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        4768,
+        1984
+      ],
+      "id": "b7bb9db0-5d0b-427f-b617-6d9f1fe33426",
+      "name": "Análise Financeira",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "D9IHs5FSqkIpriiu",
+          "name": "credencial genai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.body.aba }}",
+                    "rightValue": "dados_gerais",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "2ed52d4f-119b-4fee-887c-7e60b4c2667c"
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        3760,
+        1008
+      ],
+      "id": "83410033-fd76-46fb-82c9-d64a86ed06d9",
+      "name": "Switch3"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Descrição do projeto3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Situação atual2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Aprovações Anteriores2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Escopo do Projeto2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Não faz parte do Escopo do Projeto2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Alternativas Avaliadas2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Principais Riscos/ Plano de Mitigação2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Resultados Esperados (Qualitativos)2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Resultados Esperados (Ganhos Potenciais)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Resultado Esperados (Ganhos Reais)1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notas do Orçamento2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Análise Financeira2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Requisitos e Cronograma": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Descrição do projeto3": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Situação atual2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aprovações Anteriores2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Escopo do Projeto2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Não faz parte do Escopo do Projeto2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Alternativas Avaliadas2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Principais Riscos/ Plano de Mitigação2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resultados Esperados (Qualitativos)2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resultados Esperados (Ganhos Potenciais)": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resultado Esperados (Ganhos Reais)1": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notas do Orçamento2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Análise Financeira2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch2": {
+      "main": [
+        [
+          {
+            "node": "Descrição do projeto",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Situação atual",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Aprovações Anteriores",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Escopo do Projeto",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Não faz parte do Escopo do Projeto",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Alternativas Avaliadas",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Principais Riscos/ Plano de Mitigação",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Resultados Esperados (Qualitativos)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Resultados Esperados (Ganhos Potenciais)1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Resultado Esperados (Ganhos Reais)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notas do Orçamento",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Análise Financeira",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Requisitos e Cronograma1": {
+      "main": [
+        [
+          {
+            "node": "Switch3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Descrição do projeto": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Situação atual": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aprovações Anteriores": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Escopo do Projeto": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Não faz parte do Escopo do Projeto": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Alternativas Avaliadas": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Principais Riscos/ Plano de Mitigação": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resultados Esperados (Qualitativos)": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resultados Esperados (Ganhos Potenciais)1": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resultado Esperados (Ganhos Reais)": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notas do Orçamento": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Análise Financeira": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch3": {
+      "main": [
+        [
+          {
+            "node": "Switch2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "7dbd4464-1ba8-43aa-8462-8f19620bef94",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5cf0849f695b944e2c3d530f4b618a0c5fc10f811c4f60c443e40e66ab1065d9"
+  },
+  "id": "XAv0E9zgwn0UoXcez2htz",
+  "tags": []
+}
