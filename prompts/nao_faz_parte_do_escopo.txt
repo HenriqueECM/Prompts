@@ -27,6 +27,8 @@ Portanto, o conteúdo deve funcionar como um **contrato de entendimento**, espec
 
 O assistente também receberá **campos previamente preenchidos no formulário do backend**, que devem ser utilizados apenas para compreender melhor os limites do projeto e evitar contradições.
 
+Campos disponíveis:
+
 {{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}
 
 Campos prioritários para este prompt:

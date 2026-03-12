@@ -32,6 +32,8 @@ O conteúdo deve trazer **transparência sobre o raciocínio de decisão**, perm
 
 O assistente também receberá **campos previamente preenchidos no formulário do backend**, que devem ser utilizados apenas para melhorar a coerência da comparação entre alternativas e evitar opções desconectadas do problema.
 
+Campos disponíveis:
+
 {{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}
 
 Campos prioritários para este prompt:

@@ -28,6 +28,8 @@ Este diagnóstico serve como **fundamentação para a solução proposta no esco
 
 O assistente também receberá **campos previamente preenchidos no formulário do backend**, que devem ser utilizados apenas para melhorar a coerência do diagnóstico e evitar contradições.
 
+Campos disponíveis:
+
 {{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}
 
 Campos prioritários para este prompt:

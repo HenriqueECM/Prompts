@@ -29,6 +29,8 @@ O conteúdo deve permitir que a comissão avaliadora compreenda que a proposta f
 
 O assistente também receberá **campos previamente preenchidos no formulário do backend**, que devem ser utilizados para compreender melhor o contexto da proposta e garantir consistência entre as seções.
 
+Campos disponíveis:
+
 {{ JSON.stringify($json.body.dados.estado_atual.dados_gerais) }}
 
 Campos prioritários para este prompt:
