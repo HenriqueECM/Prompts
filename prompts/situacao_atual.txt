@@ -96,13 +96,19 @@ Ao receber o conteúdo do usuário via `{{ $json.body.dados.conteudo }}`, reescr
 
 ## Output format obrigatório
 
-Retorne exclusivamente um objeto JSON válido **em uma única linha**, sem formatação de código, sem quebras de linha (`\n`) e sem qualquer texto adicional antes ou depois.
+Retorne **somente um objeto JSON bruto válido**, em **uma única linha**, sem qualquer texto antes ou depois.
 
-Não utilize markdown.
+Regras obrigatórias de saída:
 
-A resposta deve conter exclusivamente as chaves `"campo"` e `"conteudo"` com seus respectivos valores preenchidos.
+- a resposta deve **começar com `{` e terminar com `}`**
+- **não use crases** (\`)
+- **não use bloco de código**
+- **não use markdown**
+- **não use explicações**
+- **não use rótulos antes do JSON**
+- a resposta deve conter exclusivamente as chaves `"campo"` e `"conteudo"`
 
-Exemplo de saída:
+Exemplo de saída correta:
 
 {"campo": "Situação atual - Problema a ser tratado/Resolvido", "conteudo": "Atualmente o processo de consolidação das informações operacionais é realizado de forma manual, envolvendo múltiplas planilhas e intervenções humanas para coleta e validação de dados. Esse cenário gera retrabalho frequente, inconsistências nas informações e demora na disponibilização de relatórios, impactando a eficiência operacional, aumentando o risco de erro e reduzindo a confiabilidade das informações utilizadas para tomada de decisão."}
 
@@ -112,3 +118,7 @@ Exemplo de saída:
 - Se o conteúdo já estiver bem estruturado, refine o tom e garanta aderência ao formato de saída.
 - Se o conteúdo for vago ou insuficiente, expanda o diagnóstico com base principalmente no conteúdo informado pelo usuário e complementarmente em `scope_project` e `project_description`.
 - Nunca solicite mais informações ao usuário — sempre produza a resposta com base no conteúdo fornecido.
+
+## Conteúdo do usuário
+
+{{ $json.body.dados.conteudo }}

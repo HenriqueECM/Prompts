@@ -86,6 +86,9 @@ Ao receber o conteúdo do usuário via `{{ $json.body.dados.conteudo }}`, reescr
 - **Organize o conteúdo em tópicos principais (bullets)**  
   Cada item deve representar uma alternativa e trazer, de forma integrada, sua descrição, pontos positivos, limitações e posicionamento na decisão.
 
+- **Permita conteúdo vazio quando não houver alternativas reais relevantes**  
+  Se a proposta não envolver comparação material entre opções, business case, novas ferramentas ou abordagens distintas, o campo pode ser retornado vazio.
+
 - **Mantenha coerência com a proposta**  
   As alternativas avaliadas devem estar alinhadas principalmente a `current_situation` e `scope_project`, refletindo opções plausíveis para resolver o problema atual.
 
@@ -107,15 +110,18 @@ Regras obrigatórias de saída:
 - a resposta deve conter exclusivamente as chaves `"campo"` e `"conteudo"`
 - os itens devem ser representados no campo `"conteudo"` utilizando `\n•` como separador **dentro da string JSON**
 
-Exemplo de saída correta:
+Exemplos de saída correta:
 
-{"campo": "Alternativas Avaliadas", "conteudo": "• Alternativa 1: utilização de solução manual ou consulta pontual para geração das informações. Prós: menor esforço inicial e rápida disponibilização. Contras: baixa escalabilidade, dependência operacional e risco de retrabalho. Foi considerada menos adequada por não resolver de forma estruturada a necessidade do negócio.\n• Alternativa 2: desenvolvimento de funcionalidade dedicada no sistema corporativo. Prós: maior aderência ao processo, ganho de controle e sustentabilidade da solução. Contras: maior esforço de implementação. Foi escolhida por oferecer melhor equilíbrio entre valor de negócio, confiabilidade e evolução futura.\n• Alternativa 3: adoção de ferramenta externa especializada. Prós: funcionalidades prontas e possível agilidade inicial. Contras: dependência de fornecedor, custos adicionais e necessidade de integração. Foi descartada por apresentar menor aderência ao contexto atual da organização."}
+{"campo": "Alternativas Avaliadas", "conteudo": "• Alternativa 1: utilização de solução manual ou consulta pontual para geração das informações. Prós: menor esforço inicial e rápida disponibilização. Contras: baixa escalabilidade, dependência operacional e risco de retrabalho. Foi considerada menos adequada por não resolver de forma estruturada a necessidade do negócio.\n• Alternativa 2: desenvolvimento de funcionalidade dedicada no sistema corporativo. Prós: maior aderência ao processo, ganho de controle e sustentabilidade da solução. Contras: maior esforço de implementação. Foi escolhida por oferecer melhor equilíbrio entre valor de negócio, confiabilidade e evolução futura."}
+
+{"campo": "Alternativas Avaliadas", "conteudo": ""}
 
 ## Tratamento de edge cases
 
 - Se o conteúdo recebido for **vago ou insuficiente**, infira alternativas plausíveis com base principalmente em `current_situation` e `scope_project`, e complementarmente em `project_description`.
 - Se o conteúdo estiver **muito técnico**, abstraia os detalhes e reescreva em linguagem executiva orientada ao negócio.
 - Se o conteúdo já estiver estruturado, refine a redação e garanta aderência ao formato de saída.
+- Se não houver alternativas reais, relevantes ou comparáveis no contexto da proposta, retorne conteúdo vazio.
 - Nunca solicite mais informações ao usuário — sempre produza a resposta com base no conteúdo fornecido.
 
 ## Conteúdo do usuário

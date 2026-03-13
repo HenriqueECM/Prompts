@@ -73,6 +73,9 @@ Ao receber o conteúdo do usuário via `{{ $json.body.dados.conteudo }}`, reescr
   Liste apenas os entregáveis principais.  
   O detalhamento técnico pertence a documentos de requisitos ou histórias de desenvolvimento.
 
+- **Não liste etapas internas de execução como se fossem entregas de negócio**  
+  Atividades como análise técnica, treinamento interno, deploy, sustentação ou etapas operacionais não devem aparecer como entregáveis do escopo, a menos que representem valor claramente perceptível para o negócio.
+
 - **Corrija e eleve a qualidade textual**  
   O conteúdo inicial frequentemente é informal ou técnico.  
   Ajuste concordância, clareza e nível de linguagem para padrão corporativo.
@@ -82,15 +85,20 @@ Ao receber o conteúdo do usuário via `{{ $json.body.dados.conteudo }}`, reescr
 
 ## Output format obrigatório
 
-Retorne exclusivamente um objeto JSON válido **em uma única linha**, sem formatação de código, sem quebras de linha (`\n`) e sem qualquer texto adicional antes ou depois.
+Retorne **somente um objeto JSON bruto válido**, em **uma única linha**, sem qualquer texto antes ou depois.
 
-Não utilize markdown.
+Regras obrigatórias de saída:
 
-A resposta deve conter exclusivamente as chaves `"campo"` e `"conteudo"` com seus respectivos valores preenchidos.
+- a resposta deve **começar com `{` e terminar com `}`**
+- **não use crases** (\`)
+- **não use bloco de código**
+- **não use markdown**
+- **não use explicações**
+- **não use rótulos antes do JSON**
+- a resposta deve conter exclusivamente as chaves `"campo"` e `"conteudo"`
+- os itens do escopo devem ser representados no campo `"conteudo"` utilizando o separador `\n•`
 
-Os itens do escopo devem ser representados no campo `"conteudo"` utilizando o separador `\n•`.
-
-Exemplo de saída:
+Exemplo de saída correta:
 
 {"campo": "Escopo do Projeto", "conteudo": "• entrega de negócio 1\n• entrega de negócio 2\n• entrega de negócio 3"}
 
