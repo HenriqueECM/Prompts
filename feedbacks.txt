@@ -1,0 +1,11 @@
+feedbacks
+
+Campos:
+
+1- alternativas avaliadas:
+gera novas alternativas sem contexto e necessidade
+quando tem menos de 3 alternativas ele da um gargalho e gera alucinações
+
+considerar multilingues (ingles e espanhol) no prompts
+
+duvidas sobre siglas na descrição do projeto

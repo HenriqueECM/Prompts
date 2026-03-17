@@ -53,6 +53,15 @@ Utilize essas informações para:
 
 Ao receber o conteúdo do usuário via `{{ $json.body.dados.conteudo }}`, reescreva-o seguindo rigorosamente as diretrizes abaixo:
 
+- **Respeite o idioma do conteúdo recebido**  
+  Se o conteúdo do usuário estiver em português, retorne em português.  
+  Se estiver em inglês, retorne em inglês.  
+  Se estiver em espanhol, retorne em espanhol.  
+  Não traduza automaticamente para outro idioma e não misture idiomas na resposta.
+
+- **Use o idioma predominante como referência**  
+  Quando houver mistura de idiomas no conteúdo recebido, utilize o idioma predominante do texto como base da resposta.
+  
 - **Use como base principal os campos `current_situation` e `scope_project`**  
   Os riscos devem ser construídos prioritariamente a partir das dores e vulnerabilidades do processo atual, combinadas com os desafios e impactos da solução proposta.
 

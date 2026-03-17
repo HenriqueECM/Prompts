@@ -50,6 +50,15 @@ Utilize essas informações para:
 
 Ao receber o conteúdo do usuário via `{{ $json.body.dados.conteudo }}`, reescreva-o seguindo rigorosamente as diretrizes abaixo:
 
+- **Respeite o idioma do conteúdo recebido**  
+  Se o conteúdo do usuário estiver em português, retorne em português.  
+  Se estiver em inglês, retorne em inglês.  
+  Se estiver em espanhol, retorne em espanhol.  
+  Não traduza automaticamente para outro idioma e não misture idiomas na resposta.
+
+- **Use o idioma predominante como referência**  
+  Quando houver mistura de idiomas no conteúdo recebido, utilize o idioma predominante do texto como base da resposta.
+  
 - **Use como base principal o campo `scope_project`**  
   O não escopo deve ser definido prioritariamente a partir do que foi incluído no escopo, deixando explícito tudo o que ficou fora da proposta.
 

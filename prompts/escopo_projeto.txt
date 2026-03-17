@@ -45,6 +45,15 @@ Utilize essas informações para:
 
 Ao receber o conteúdo do usuário via `{{ $json.body.dados.conteudo }}`, reescreva-o seguindo rigorosamente as diretrizes abaixo:
 
+- **Respeite o idioma do conteúdo recebido**  
+  Se o conteúdo do usuário estiver em português, retorne em português.  
+  Se estiver em inglês, retorne em inglês.  
+  Se estiver em espanhol, retorne em espanhol.  
+  Não traduza automaticamente para outro idioma e não misture idiomas na resposta.
+
+- **Use o idioma predominante como referência**  
+  Quando houver mistura de idiomas no conteúdo recebido, utilize o idioma predominante do texto como base da resposta.
+  
 - **Estruture em tópicos principais (bullets)**  
   O escopo deve ser apresentado como uma lista de entregas principais.  
   Cada item representa uma funcionalidade ou entrega de negócio a ser realizada.
